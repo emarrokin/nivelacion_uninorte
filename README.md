@@ -1,16 +1,13 @@
 Proyecto Nivelación MisionTic 
 
-Usar el template para crear un repositorio propio, completar el proyecto y verificar que las pruebas de widget e integración funcione
+- **Integrante:** Edwin Fernando Marroquin Bustos
+- **correo electronico:** emarroquin@uninorte.edu.co
 
-Para la prueba de integración se asume que hay un usuario creado a@a.com con clave 123456
+---
+# **SOLUCION NIVELACION**
 
-Recordar que la prueba de integración se corre con:   
+- ## [video de funcionalidad](https://drive.google.com/file/d/1_-7aFNhykksDGBlpLJ_KStjpq1KXyYgj/view?usp=sharing)
+- ## [video de pruebas](https://drive.google.com/file/d/1JYHXSBVirxANbBL6Xp6TD5mSQd8DZRik/view?usp=sharing)
 
-flutter drive --driver test_driver/integration_test.dart --target integration_test/app_test.dart
-
-Este proyecto trabaja las funcionalidades de Firestore y autenticación de Firebase, hay que agregar el google-services.json y habilitar esos servicios en el firebase console. Ver: https://drive.google.com/file/d/1qPSQkVIiUy6Iv9OfwAC_dTRLvEDPz4pp/view?usp=sharing   
-
-Pista: Revisar los comentarios TODO   
-
-
-<img src="firebase.gif" width="300" />
+---
+---
