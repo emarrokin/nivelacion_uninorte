@@ -25,7 +25,12 @@ class _GroupWidgetState extends State<GroupWidget> {
         //   child: Text(
         //       'Aquí colocar la lista de grupos, recordar que se se debe escuchar el controlador (groups) con obx'),
         // ),
-        body: Obx(() => ListView.builder(itemBuilder: (context, index) {})),
+        body: Center(
+            child: Obx(() => ListView.builder(
+                itemCount: firebaseController.groups.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return _buildItem(context, firebaseController.groups[index]);
+                }))),
         floatingActionButton: FloatingActionButton(
           key: const ValueKey("addGroupAction"),
           child: const Icon(Icons.add),
