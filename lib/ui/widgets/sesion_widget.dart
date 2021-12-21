@@ -23,7 +23,11 @@ class SesionWidget extends StatelessWidget {
           onPressed: () {
             if (firebaseController.groupIds().isNotEmpty) {
               // TODO
-              logInfo('Aquí navegar a  AddSesionPage');
+              // logInfo('Aquí navegar a  AddSesionPage');
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AddSesionPage()));
             } else {
               Get.snackbar("Aun no has creado ningun grupo",
                   "Crea un grupo para continuar...");

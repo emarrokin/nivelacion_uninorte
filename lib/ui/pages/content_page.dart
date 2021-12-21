@@ -6,6 +6,7 @@ import 'package:misiontic_team_management/domain/controller/theme_controller.dar
 import 'package:misiontic_team_management/ui/widgets/appbar.dart';
 import 'package:misiontic_team_management/ui/widgets/group_widget.dart';
 import 'package:misiontic_team_management/ui/widgets/sesion_widget.dart';
+import 'package:misiontic_team_management/ui/pages/authentication/firebase_signup.dart';
 
 class ContentPage extends StatefulWidget {
   @override
@@ -19,7 +20,8 @@ class _ContentPageState extends State<ContentPage> {
   final ThemeController themeController = Get.find();
   static final List<Widget> _widgets = <Widget>[
     const GroupWidget(),
-    SesionWidget()
+    SesionWidget(),
+    FirebaseSignUp(),
   ];
 
   _onItemTapped(int index) {

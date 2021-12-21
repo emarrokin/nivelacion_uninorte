@@ -1,8 +1,11 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
 import 'package:misiontic_team_management/domain/controller/authentication_controller.dart';
 import 'firebase_signup.dart';
+
+import './firebase_signup.dart';
 
 class FirebaseLogIn extends StatefulWidget {
   @override
@@ -18,9 +21,7 @@ class _FirebaseLogInState extends State<FirebaseLogIn> {
   _login(theEmail, thePassword) async {
     print('_login $theEmail $thePassword');
     try {
-      // TODO
-      logInfo(
-          'Aquí llamar al método login del authenticationController con await');
+      AuthenticationController().login(theEmail, thePassword);
     } catch (err) {
       Get.snackbar(
         "Login",
@@ -102,7 +103,11 @@ class _FirebaseLogInState extends State<FirebaseLogIn> {
           TextButton(
               onPressed: () {
                 // TODO
-                logInfo('Aquí navegar a  FirebaseSignUp');
+                // logInfo('Aquí navegar a  FirebaseSignUp');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FirebaseSignUp()),
+                );
               },
               child: const Text("Create account"))
         ],
